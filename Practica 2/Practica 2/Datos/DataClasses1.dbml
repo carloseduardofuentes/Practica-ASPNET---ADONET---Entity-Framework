@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Cargo" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=Cargo;User ID=cargo" SettingsObjectName="Datos.Properties.Settings" SettingsPropertyName="CargoConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.prc_slcPersona" Method="prc_slcPersona">
+    <Parameter Name="p_codigo_persona" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_nombres" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="p_contacto" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="p_pais" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="prc_slcPersonaResult">
+      <Column Name="N_CODIGO_PERSONA" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="C_NOMBRES" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="N_CODIGO_PAIS" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="C_PAIS" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="N_CODIGO_PUERTO" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="C_PUERTO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="N_CODIGO_TIPO" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="C_TIPO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="C_MARCA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C_CONTACTO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="C_ESTADO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="C_CIUDAD" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="C_DIRECCION" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="C_TELEFONO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C_FAX" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C_EMAIL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="C_DIRECCION2" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="C_TELEFONO2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C_FAX2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C_EMAIL2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="C_ZIP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.prc_slcTipo" Method="prc_slcTipo">
+    <Parameter Name="p_codigo_tipo" Type="System.Int32" DbType="Int" />
+    <ElementType Name="prc_slcTipoResult">
+      <Column Name="N_CODIGO_TIPO" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="C_TIPO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.prc_slcPuerto" Method="prc_slcPuerto">
+    <Parameter Name="p_codigo_puerto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_codigo_pais" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_puerto" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="prc_slcPuertoResult">
+      <Column Name="N_CODIGO_PUERTO" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="C_PUERTO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="N_CODIGO_PAIS" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="C_PUERTO_PAIS" Type="System.String" DbType="VarChar(153)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.prc_insPersona" Method="prc_insPersona">
+    <Parameter Name="p_nombres" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="p_codigo_pais" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_codigo_puerto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_codigo_tipo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_marca" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_contacto" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="p_estado" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="p_ciudad" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="p_direccion" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="p_telefono" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_fax" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_email" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="p_direccion2" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="p_telefono2" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_fax2" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_email2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="p_zip" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_creado_por" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.prc_updPersona" Method="prc_updPersona">
+    <Parameter Name="p_codigo_persona" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_nombres" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="p_codigo_pais" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_codigo_puerto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_codigo_tipo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_marca" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_contacto" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="p_estado" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="p_ciudad" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="p_direccion" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="p_telefono" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_fax" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_email" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="p_direccion2" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="p_telefono2" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_fax2" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_email2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="p_zip" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_modificado_por" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.prc_delPersona" Method="prc_delPersona">
+    <Parameter Name="p_codigo_persona" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

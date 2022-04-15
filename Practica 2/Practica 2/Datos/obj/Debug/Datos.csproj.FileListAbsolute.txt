@@ -1,0 +1,6 @@
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Datos\bin\Debug\Datos.dll.config
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Datos\bin\Debug\Datos.dll
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Datos\bin\Debug\Datos.pdb
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Datos\obj\Debug\Datos.dll
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Datos\obj\Debug\Datos.pdb
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache

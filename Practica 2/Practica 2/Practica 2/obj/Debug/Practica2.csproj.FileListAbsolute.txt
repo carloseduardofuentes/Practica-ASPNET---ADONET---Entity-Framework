@@ -1,0 +1,7 @@
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Practica 2\bin\Practica 2.dll
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Practica 2\bin\Practica 2.pdb
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Practica 2\obj\Debug\Practica 2.dll
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Practica 2\obj\Debug\Practica 2.pdb
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Practica 2\bin\Datos.dll
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Practica 2\bin\Datos.pdb
+E:\Codigo Fuente\C#\Practica 2\Practica 2\Practica 2\obj\Debug\Practica2.csprojResolveAssemblyReference.cache
